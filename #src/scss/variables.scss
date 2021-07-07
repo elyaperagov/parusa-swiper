@@ -1,0 +1,30 @@
+// Default
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(0, 0, 0, 0);
+
+/*general*/
+
+$mobiles: 320px;
+$mobiles-max: 767px;
+$tablets: 768px;
+$tablets-max: 1023px;
+$desktops: 1024px;
+$container: 1410px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+$transition-settings: 0.3s all;
+// Base
+$color-black: #2D2D2D;
+$color-light-black: #313030;
+$color-dark-gray: #6A6A6A;
+$background-dark-gray: #E5E5E5;
+$color-light-gray: #F7F7F7;
+$color-orange: #FF7F00;
+$color-white: #FFFFFF;
+$color-blue: #00A2CE;
+$color-gray: #C4C4C4;
+$color-red: #DD3232;
+$font-base-color: $color-black;
+$background-base-color: $color-light-gray;
+$color-placeholder: $color-light-gray;

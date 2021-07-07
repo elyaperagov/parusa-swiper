@@ -1,0 +1,38 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    outline: none !important;
+    border: none;
+    transition: $transition-settings;
+    cursor: pointer;
+    flex-shrink: 0;
+    &--orange {
+        background-color: $color-orange;
+        min-height: 50px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-default-white;
+        width: 90%;
+        margin-right: auto;
+
+        @media (max-width: $tablets-max) {
+            margin: 0 auto;
+        }
+        @media (max-width: $mobiles-max) {
+            width: 100%;
+        }
+    }
+    .icon {
+        stroke: $color-white;
+        transition: $transition-settings;
+    }
+    &:hover {
+        background: $color-gray;
+        p {
+            color: $color-black;
+        }
+    }
+}
