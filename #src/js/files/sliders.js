@@ -61,12 +61,13 @@ function sliders_bild_callback(params) {}
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
-    slidesPerView: 4,
+    slidesPerView: 'auto',
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 'auto',
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -76,3 +77,13 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
+
+// var swiper2 = new Swiper(".mySwiper3", {
+
+//     slidesPerView: "auto",
+//     spaceBetween: 30,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+// });

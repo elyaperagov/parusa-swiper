@@ -175,7 +175,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    // color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    color:#54A5E2;
 }
 
 .swiper-button-next.swiper-button-disabled,
@@ -616,4 +617,120 @@ button.swiper-pagination-bullet {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
+
+.swiper-images {
+    display: flex;
+}
+
+.swiper-image {
+    width: 32%;
+    margin-right: 10px;
+    height: 80%;
+    &:last-of-type {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: $tablets-max) {
+        display: none;
+
+        &:first-of-type {
+            display: block;
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &:first-of-type {
+            width: 100%;
+        }
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    &--thumbs {
+        height: 250px;
+        .swiper-slide {
+            width: 20%;
+            height: 150px!important;
+            img, picture {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        @media (max-width: 600px) {
+            height: 100px!important;
+
+            .swiper-slide {
+                height: 100px!important;
+                img, picture {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        // @media (max-width: $tablets-max) {
+        //     display: none;
+        // }
+    }
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper .swiper-slide {
+    // width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
