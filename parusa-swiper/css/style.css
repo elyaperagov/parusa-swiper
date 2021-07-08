@@ -1510,7 +1510,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-image {
-  width: 32%;
+  width: 100%;
   margin-right: 10px;
   height: 80%;
 }
@@ -1552,18 +1552,18 @@ button.swiper-pagination-bullet {
 
 .swiper-container {
   width: 100%;
-  height: 440px;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .swiper-container--thumbs {
-  height: 250px;
+  height: 150px;
 }
 
 .swiper-container--thumbs .swiper-slide {
   width: 20%;
-  height: 150px !important;
+  height: 130px !important;
 }
 
 .swiper-container--thumbs .swiper-slide img,
@@ -1581,7 +1581,6 @@ button.swiper-pagination-bullet {
 
 .mySwiper .swiper-slide {
   height: 100%;
-  opacity: 0.4;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -1594,6 +1593,14 @@ button.swiper-pagination-bullet {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.bigSwiper {
+  height: 0;
+}
+
+.bigSwiper.active {
+  height: 650px;
 }
 
 .page {
@@ -1645,6 +1652,10 @@ button.swiper-pagination-bullet {
     display: block;
     width: 70%;
   }
+
+  .bigSwiper.active {
+    height: 450px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1668,6 +1679,10 @@ button.swiper-pagination-bullet {
 
   .portfolio-wrap {
     padding: 0 20px 0;
+  }
+
+  .bigSwiper.active {
+    height: 340px;
   }
 }
 

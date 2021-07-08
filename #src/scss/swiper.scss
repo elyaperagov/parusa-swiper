@@ -176,7 +176,7 @@
     align-items: center;
     justify-content: center;
     // color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    color:#54A5E2;
+    color: #54A5E2;
 }
 
 .swiper-button-next.swiper-button-disabled,
@@ -624,7 +624,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-image {
-    width: 32%;
+    width: 100%;
     margin-right: 10px;
     height: 80%;
     &:last-of-type {
@@ -635,16 +635,13 @@ button.swiper-pagination-bullet {
         height: 100%;
         object-fit: cover;
     }
-
     @media (max-width: $tablets-max) {
         display: none;
-
         &:first-of-type {
             display: block;
             width: 70%;
         }
     }
-
     @media (max-width: 600px) {
         &:first-of-type {
             width: 100%;
@@ -680,15 +677,16 @@ button.swiper-pagination-bullet {
 
 .swiper-container {
     width: 100%;
-    height: 440px;
+    height: 650px;
     margin-left: auto;
     margin-right: auto;
     &--thumbs {
-        height: 250px;
+        height: 150px;
         .swiper-slide {
             width: 20%;
-            height: 150px!important;
-            img, picture {
+            height: 130px!important;
+            img,
+            picture {
                 object-fit: cover;
                 height: 100%;
                 width: 100%;
@@ -696,17 +694,16 @@ button.swiper-pagination-bullet {
         }
         @media (max-width: 600px) {
             height: 100px!important;
-
             .swiper-slide {
                 height: 100px!important;
-                img, picture {
+                img,
+                picture {
                     object-fit: cover;
                     height: 100%;
                     width: 100%;
                 }
             }
         }
-
         // @media (max-width: $tablets-max) {
         //     display: none;
         // }
@@ -721,7 +718,6 @@ button.swiper-pagination-bullet {
 .mySwiper .swiper-slide {
     // width: 25%;
     height: 100%;
-    opacity: 0.4;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -733,4 +729,17 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.bigSwiper {
+    height: 0;
+    &.active {
+        height: 650px;
+        @media (max-width: $tablets-max) {
+            height: 450px;
+        }
+        @media (max-width: $mobiles-max) {
+            height: 340px;
+        }
+    }
 }
